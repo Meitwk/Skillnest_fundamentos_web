@@ -8,7 +8,9 @@
     padding: 40px;
     font-family:sans-serif;
 }
-
+.sinLinea{
+    text-decoration: none;
+}
 .titulo{
     margin-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,7 +18,6 @@
 
 .textoCentro {
    text-align: center;
-   
 }
 
 .container{
