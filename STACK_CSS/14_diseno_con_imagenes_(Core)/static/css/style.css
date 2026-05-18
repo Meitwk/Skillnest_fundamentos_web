@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cajas{
+    background-color: #fff;
+    display: flex;
+    box-shadow: 5px 5px 4px rgb(201, 200, 200);
+    margin: 5px;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+}
