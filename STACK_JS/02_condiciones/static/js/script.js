@@ -12,7 +12,7 @@
 // Total a pagar
 function sistemaDescuento(){
     let nombre = prompt("Ingrese su nombre: ");
-    let monto = parseInt(prompt("Ingrese el monto de compra: "))
+    let monto = parseInt(prompt("Ingrese el monto de compra: "));
     if (monto >= 50000){
         alert(`El monto con descuento es: ${monto - (monto * 0.2)}`)
     } else if(monto >= 30000){
@@ -34,18 +34,22 @@ function sistemaDescuento(){
 // Mostrar:
 // “Acceso permitido”
 // o “Acceso denegado”
-function accesoEvento(){
-    let edad = parseInt(prompt("Ingrese su edad: "))
-    if (edad > 18) {
+
+function accesoEvento() {
+    let edad = parseInt(prompt("Ingrese su edad: "));
+    if (edad >= 18) {
         alert("Puede pasar")
     } else if (edad < 18 && edad > 0) {
-    let acompañado = prompt("¿Esta acompañado por un adulto?: si/no ");
-    if (acompañado == "si") {
-        alert("Acceso permitido")
-    } else if (permitido == "no") {
-        alert("Acceso denegado")
+        let acompañado = prompt("¿Está acompañado por un adulto?: si/no ")
+        if (acompañado == "si") {
+            alert("Acceso permitido")
+        } else if (acompañado == "no") {
+            alert("Acceso denegado")
+        } else {
+            alert("Ingrese valores válidos")
+        }
     } else {
-        alert("Ingrese valores válidos")
+        alert("Edad inválida")
     }
 }
 // ✅ Ejercicio 3: Clasificación de temperatura
@@ -58,6 +62,19 @@ function accesoEvento(){
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
 
+function clasificacionTem(){
+    let tem = parseInt(prompt("Ingrese temperatura actual: "));
+    if (tem < 10){
+        alert("Hace frío")
+    } else if (tem >= 10 && tem <= 24){
+        alert("Temperatura agradable")
+    } else if (tem >= 25){
+        alert("Hace calor")
+    }
+    if (tem > 35){
+        alert("Temperatura extrema")
+    }
+}
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
 // Solicitar:
@@ -70,6 +87,18 @@ function accesoEvento(){
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
+
+function verificacionAdmin(){
+    let usuario = prompt("Ingrese su nombre de usuario: ");
+    let contra = parseInt(prompt("Ingrese la contraseña: "));
+    if (usuario == "admin" && contra == 12345){
+        alert("Bienvenido administrador")
+    } else if (usuario == "admin"){
+        alert("Contraseña incorrecta")
+    } else{
+        alert("Usuario no encontrado")
+    }
+}
 
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
@@ -86,6 +115,24 @@ function accesoEvento(){
 // Además:
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
+
+function sistemaAprobacion(){
+    let nombre = prompt("Ingrese su nombre: ");
+    let nota1 = parseInt(prompt("Ingrese la nota 1: "));
+    let nota2 = parseInt(prompt("Ingrese la nota 2: "));
+    let nota3 = parseInt(prompt("Ingrese la nota 3: "));
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    if (promedio >= 6.0){
+        alert("Aprobado con excelencia")
+    } else if (promedio >= 4.0 && promedio <= 5.9){
+        alert("Aprobado")
+    } else if (promedio < 4.0){
+        alert("Reprobado")
+    }
+    if (promedio < 2.0){
+        alert("Debe asistir a reforzamiento")
+    }
+}
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:
