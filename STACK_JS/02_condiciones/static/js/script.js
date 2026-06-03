@@ -90,7 +90,7 @@ function clasificacionTem(){
 
 function verificacionAdmin(){
     let usuario = prompt("Ingrese su nombre de usuario: ");
-    let contra = parseInt(prompt("Ingrese la contraseña: "));
+    let contra = prompt("Ingrese la contraseña:");
     if (usuario == "admin" && contra == 12345){
         alert("Bienvenido administrador")
     } else if (usuario == "admin"){
