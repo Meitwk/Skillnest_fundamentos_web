@@ -10,16 +10,16 @@
 // Luego mostrar:
 // Descuento aplicado
 // Total a pagar
-function sistemaDescuento(){
+function sistemaDescuento() {
     let nombre = prompt("Ingrese su nombre: ");
     let monto = parseInt(prompt("Ingrese el monto de compra: "));
-    if (monto >= 50000){
-        alert(`El monto con descuento es: ${monto - (monto * 0.2)}`)
-    } else if(monto >= 30000){
-        alert(`El monto con descuento es: ${monto - (monto * 0.1)}`)
-    } else if(monto <= 30000 && monto > 0){
+    if (monto >= 50000) {
+        alert(`Obtiene 20% de descuento, monto total a pagar: ${monto - (monto * 0.2)}`)
+    } else if (monto >= 30000) {
+        alert(`Obtiene 10% de descuento, monto total a pagar: ${monto - (monto * 0.1)}`)
+    } else if (monto <= 30000 && monto > 0) {
         alert(`El monto final es: ${monto}. Sin descuento`)
-    } else{
+    } else {
         alert("Ingrese valores válidos");
     }
 }
@@ -41,9 +41,9 @@ function accesoEvento() {
         alert("Puede pasar")
     } else if (edad < 18 && edad > 0) {
         let acompañado = prompt("¿Está acompañado por un adulto?: si/no ")
-        if (acompañado == "si") {
+        if (acompañado === "si") {
             alert("Acceso permitido")
-        } else if (acompañado == "no") {
+        } else if (acompañado === "no") {
             alert("Acceso denegado")
         } else {
             alert("Ingrese valores válidos")
@@ -62,16 +62,16 @@ function accesoEvento() {
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
 
-function clasificacionTem(){
+function clasificacionTem() {
     let tem = parseInt(prompt("Ingrese temperatura actual: "));
-    if (tem < 10){
+    if (tem < 10) {
         alert("Hace frío")
-    } else if (tem >= 10 && tem <= 24){
+    } else if (tem >= 10 && tem <= 24) {
         alert("Temperatura agradable")
-    } else if (tem >= 25){
+    } else if (tem >= 25) {
         alert("Hace calor")
     }
-    if (tem > 35){
+    if (tem > 35) {
         alert("Temperatura extrema")
     }
 }
@@ -88,14 +88,14 @@ function clasificacionTem(){
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
 
-function verificacionAdmin(){
+function verificacionAdmin() {
     let usuario = prompt("Ingrese su nombre de usuario: ");
     let contra = prompt("Ingrese la contraseña:");
-    if (usuario == "admin" && contra == 12345){
+    if (usuario === "admin" && contra === "12345") {
         alert("Bienvenido administrador")
-    } else if (usuario == "admin"){
+    } else if (usuario === "admin") {
         alert("Contraseña incorrecta")
-    } else{
+    } else {
         alert("Usuario no encontrado")
     }
 }
@@ -116,20 +116,24 @@ function verificacionAdmin(){
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
 
-function sistemaAprobacion(){
+function sistemaAprobacion() {
     let nombre = prompt("Ingrese su nombre: ");
-    let nota1 = parseInt(prompt("Ingrese la nota 1: "));
-    let nota2 = parseInt(prompt("Ingrese la nota 2: "));
-    let nota3 = parseInt(prompt("Ingrese la nota 3: "));
+    let nota1 = parseFloat(prompt("Ingrese la nota 1: "));
+    let nota2 = parseFloat(prompt("Ingrese la nota 2: "));
+    let nota3 = parseFloat(prompt("Ingrese la nota 3: "));
     let promedio = (nota1 + nota2 + nota3) / 3;
-    if (promedio >= 6.0){
+    if (promedio >= 6.0) {
         alert("Aprobado con excelencia")
-    } else if (promedio >= 4.0 && promedio <= 5.9){
+    } else if (promedio >= 4.0 && promedio <= 5.9) {
         alert("Aprobado")
-    } else if (promedio < 4.0){
+    } else if (promedio < 4.0) {
         alert("Reprobado")
     }
-    if (promedio < 2.0){
+    if (nota1 < 2.0) {
+        alert("Debe asistir a reforzamiento")
+    } else if (nota2 < 2.0) {
+        alert("Debe asistir a reforzamiento")
+    } else if (nota3 < 2.0) {
         alert("Debe asistir a reforzamiento")
     }
 }
