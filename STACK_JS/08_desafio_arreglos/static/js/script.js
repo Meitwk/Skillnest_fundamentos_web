@@ -44,7 +44,7 @@ function contarCanciones() {
         }
     }
 
-    alert(`La canción, ${cancionBuscada}, se reprodujo, ${contador}, veces.`);
+    alert(`La canción ${cancionBuscada} se reprodujo ${contador}  veces.`);
 }
 
 //🕹️ Organizadores de torneo de videojuegos
