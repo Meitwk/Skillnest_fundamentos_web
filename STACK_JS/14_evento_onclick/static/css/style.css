@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F1F2F6;
+
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #A29BFE;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+    padding-left: 120px;
+}
+.buscar{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 500px;
+}
+.iniciarSecion{
+    background-color: #6C5CE7;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 120px;
+}
+.seccionPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.cajaPublicaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+    height: 600px;
+    align-items: center;
+    margin-left: 100px;
+    padding:0 20px 20px 20px;
+}
+.cajaPublicaciones h2{
+    font-size: 28px;
+}
+.publicacion1, .publicacion2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    flex: 2;
+}
+.cajaLateral{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
+    height: 200px;
+    flex: 1;
+}
+.megusta{
+    background-color: #FF7675;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+}
+.verperfil{
+    background-color: #00CEC9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+}
