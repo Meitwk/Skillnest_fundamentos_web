@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #cccbcb;
+    font-family: Arial, sans-serif;
+
+    flex-direction: column; 
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4A3F35;
+    padding: 20px 20px 
+}
+.nav h1{
+    color: white;
+    font-size: 28px;
+}
+.nav button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 20px;
+}
+.nav input{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 20px;
+    width: 500px;
+}
+.arte{
+    background-color: #cccbcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.obra {
+    background-color: #ffffff;
+    display: flex;           
+    flex-direction: column; 
+    align-items: center;     
+    padding: 15px;         
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(167, 17, 17, 0.2);
+    width: fit-content;      
+}
+
+.obra img {
+    max-width: 700px;  
+    max-height: 500px; 
+    width: auto;       
+    height: auto;      
+    border-radius: 5px;
+    display: block;
+}
+
+.obra p {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
