@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f5f5;
+}
+
+.titulo{
+    padding: 30px;
+}
+.titulo p{
+    color: grey;
+}
+/* ================================
+   VARIABLES
+================================ */
+
+:root {
+    --azul: #1565c0;
+    --azul-claro: #eaf3ff;
+    --gris: #666;
+    --gris-claro: #eeeeee;
+    --blanco: #ffffff;
+    --negro: #222;
+}
+
+
+/* ================================
+   ELEMENTOS GENERALES
+================================ */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+
+
+/* CONTENEDOR TARJETAS */
+
+.destinos {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+/* TARJETA */
+
+.tarjetas{
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+}
+
+.destino-card {
+    background-color: var(--blanco);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+
+    /*
+        El ancho base es 230px.
+        El elemento puede crecer y reducirse.
+    */
+    flex: 1 1 230px;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* IMAGEN TARJETA */
+
+.card-imagen {
+    min-height: 150px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    
+
+    color: white;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/*
+    Estos fondos representan
+    distintos destinos.
+*/
+
+.torres {
+    background-color: grey;
+
+}
+
+.cusco {
+    background-color: grey;
+}
+
+.cancun {
+    background-color: grey;
+}
+
+.madrid {
+    background-color: grey;
+}
+
+
+/* CONTENIDO */
+
+.card-contenido {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: px;
+
+    flex-grow: 1;
+}
+
+.pais {
+    color: grey;
+
+}
+
+.card-contenido h3 {
+    font-size: 1.3rem;
+}
+
+.descripcion {
+    color: var(--gris);
+}
+
+
+/* BOTÓN VER MÁS */
+
+.btn-ver-mas {
+
+    margin-top: auto;
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--azul);
+
+    color: white;
+    background-color: #828281;
+
+    cursor: pointer;
+}
+
+.btn-ver-mas:hover {
+    opacity: 0.9;
+}
+
+
+/* INFORMACIÓN OCULTA */
+
+.oculto {
+    display: none;
+}
