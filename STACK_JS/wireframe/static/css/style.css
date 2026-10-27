@@ -16,9 +16,6 @@ body {
 }
 
 
-/* ================================
-   VARIABLES
-================================ */
 
 :root {
     --azul: #1565c0;
@@ -30,9 +27,7 @@ body {
 }
 
 
-/* ================================
-   ELEMENTOS GENERALES
-================================ */
+
 
 a {
     text-decoration: none;
@@ -45,9 +40,7 @@ input {
 }
 
 
-/* ================================
-   HEADER
-================================ */
+
 
 .header {
     width: 100%;
@@ -66,7 +59,7 @@ input {
 }
 
 
-/* LOGO */
+
 
 .logo {
     display: flex;
@@ -86,7 +79,6 @@ input {
 }
 
 
-/* NAV */
 
 .nav {
     display: flex;
@@ -110,7 +102,7 @@ input {
 }
 
 
-/* BUSCADOR */
+
 
 .buscador {
     display: flex;
@@ -148,18 +140,13 @@ input {
 }
 
 
-/* ================================
-   MAIN
-================================ */
+
 
 main {
     width: 100%;
 }
 
 
-/* ================================
-   HERO
-================================ */
 
 .hero {
     width: 90%;
@@ -182,7 +169,6 @@ main {
 }
 
 
-/* TEXTO HERO */
 
 .hero-texto {
     flex: 1 1 300px;
@@ -217,7 +203,6 @@ main {
 }
 
 
-/* BOTONES HERO */
 
 .hero-botones {
     display: flex;
@@ -247,8 +232,6 @@ main {
     color: var(--azul);
 }
 
-
-/* IMAGEN HERO */
 
 .hero-imagen {
     flex: 1 1 300px;
@@ -288,9 +271,6 @@ main {
 }
 
 
-/* ================================
-   DESTINOS
-================================ */
 
 .destinos-section {
     width: 90%;
@@ -300,7 +280,6 @@ main {
 }
 
 
-/* ENCABEZADO SECCIÓN */
 
 .section-header {
     margin-bottom: 30px;
@@ -325,8 +304,6 @@ main {
 }
 
 
-/* CONTENEDOR TARJETAS */
-
 .destinos {
     display: flex;
 
@@ -336,7 +313,6 @@ main {
 }
 
 
-/* TARJETA */
 
 .destino-card {
     background-color: var(--blanco);
@@ -347,10 +323,7 @@ main {
 
     border: 1px solid #ddd;
 
-    /*
-        El ancho base es 230px.
-        El elemento puede crecer y reducirse.
-    */
+
     flex: 1 1 230px;
 
     min-width: 0;
@@ -360,7 +333,6 @@ main {
 }
 
 
-/* IMAGEN TARJETA */
 
 .card-imagen {
     min-height: 180px;
@@ -378,10 +350,6 @@ main {
 }
 
 
-/*
-    Estos fondos representan
-    distintos destinos.
-*/
 
 .torres {
     background: linear-gradient(135deg,
@@ -407,8 +375,6 @@ main {
             #d6a8b1);
 }
 
-
-/* CONTENIDO */
 
 .card-contenido {
     padding: 20px;
@@ -438,7 +404,7 @@ main {
 }
 
 
-/* BOTÓN VER MÁS */
+
 
 .btn-ver-mas {
     align-self: flex-start;
@@ -463,14 +429,12 @@ main {
 }
 
 
-/* INFORMACIÓN OCULTA */
 
 .oculto {
     display: none;
 }
 
 
-/* MENSAJE BÚSQUEDA */
 
 .mensaje-busqueda {
     margin-top: 20px;
@@ -481,9 +445,6 @@ main {
 }
 
 
-/* ================================
-   INFORMACIÓN
-================================ */
 
 .info-section {
     width: 90%;
@@ -521,7 +482,6 @@ main {
 }
 
 
-/* BENEFICIOS */
 
 .beneficios {
     flex: 1 1 400px;
@@ -560,9 +520,7 @@ main {
 }
 
 
-/* ================================
-   FOOTER
-================================ */
+
 
 .footer {
     background-color: #222;

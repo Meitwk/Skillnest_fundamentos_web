@@ -21,9 +21,7 @@ body {
 .titulo p{
     color: grey;
 }
-/* ================================
-   VARIABLES
-================================ */
+
 
 :root {
     --azul: #1565c0;
@@ -35,9 +33,6 @@ body {
 }
 
 
-/* ================================
-   ELEMENTOS GENERALES
-================================ */
 
 a {
     text-decoration: none;
@@ -51,9 +46,6 @@ input {
 
 
 
-
-/* CONTENEDOR TARJETAS */
-
 .destinos {
     display: flex;
 
@@ -63,7 +55,6 @@ input {
 }
 
 
-/* TARJETA */
 
 .tarjetas{
     display: flex;
@@ -80,10 +71,6 @@ input {
 
     border: 1px solid #ddd;
 
-    /*
-        El ancho base es 230px.
-        El elemento puede crecer y reducirse.
-    */
     flex: 1 1 230px;
 
     min-width: 0;
@@ -93,7 +80,6 @@ input {
 }
 
 
-/* IMAGEN TARJETA */
 
 .card-imagen {
     min-height: 150px;
@@ -112,10 +98,6 @@ input {
 }
 
 
-/*
-    Estos fondos representan
-    distintos destinos.
-*/
 
 .torres {
     background-color: grey;
@@ -135,7 +117,7 @@ input {
 }
 
 
-/* CONTENIDO */
+
 
 .card-contenido {
     padding: 20px;
@@ -162,7 +144,6 @@ input {
 }
 
 
-/* BOTÓN VER MÁS */
 
 .btn-ver-mas {
 
@@ -187,7 +168,6 @@ input {
 }
 
 
-/* INFORMACIÓN OCULTA */
 
 .oculto {
     display: none;

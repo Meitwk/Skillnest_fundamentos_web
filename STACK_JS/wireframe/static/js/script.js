@@ -26,9 +26,8 @@ botonesVerMas.forEach(function (boton) {
 });
 
 
-// ========================================
-// BUSCADOR
-// ========================================
+
+
 
 const inputBuscar = document.getElementById("buscarDestino");
 const botonBuscar = document.getElementById("btnBuscar");
@@ -92,9 +91,7 @@ botonBuscar.addEventListener("click", function () {
 });
 
 
-// ========================================
-// BUSCAR AL PRESIONAR ENTER
-// ========================================
+
 
 inputBuscar.addEventListener("keydown", function (evento) {
 
