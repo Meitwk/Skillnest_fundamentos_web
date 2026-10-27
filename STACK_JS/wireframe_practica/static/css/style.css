@@ -58,6 +58,7 @@ input {
 
 .tarjetas{
     display: flex;
+    flex-wrap: wrap;
     padding: 30px;
     gap: 10px;
 }
@@ -125,7 +126,7 @@ input {
     display: flex;
     flex-direction: column;
 
-    gap: px;
+    gap: 8px;
 
     flex-grow: 1;
 }
@@ -146,6 +147,7 @@ input {
 
 
 .btn-ver-mas {
+    width: 100%;
 
     margin-top: auto;
 
